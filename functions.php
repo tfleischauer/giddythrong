@@ -99,6 +99,30 @@ function my_register_sidebars() {
 		)
 	);
 	
+	/* Register the CTA Two sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'ctatwo',
+			'name' => __( 'CTA Two Widget Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+	
+	/* Register the CTA Three sidebar. */
+	register_sidebar(
+		array(
+			'id' => 'ctathree',
+			'name' => __( 'CTA Three Widget Sidebar' ),
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget' => '</div>',
+			'before_title' => '<h3 class="widget-title">',
+			'after_title' => '</h3>'
+		)
+	);
+	
 	/* Register the CTA Four sidebar. */
 	register_sidebar(
 		array(
@@ -132,3 +156,6 @@ $query->set('cat', '-22');
 return $query;
 }
 add_filter('pre_get_posts', 'exclude_category');
+
+// to enable support for post thumbnails / featured image
+add_theme_support( 'post-thumbnails' ); 

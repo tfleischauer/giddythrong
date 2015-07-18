@@ -49,36 +49,18 @@
           </div> <!-- end cta-one -->
             
           <div id="cta-two" class="box-shadow">
+          
+          	<?php if ( is_active_sidebar( 'ctatwo' ) ) : ?>
+
+				<?php dynamic_sidebar( 'ctatwo' ); ?>
+
+				<?php else : ?>
+
+				<!-- Create some custom HTML or call the_widget().  It's up to you. -->
+
+				<?php endif; ?>
                         
-            <!--<h3><a href="http://giddythrong.com/giddyup/inventory/">Go To New Finds >></a></h3>-->
-                <a href="http://giddythrong.com/giddyup/inventory/"><img src="<?php bloginfo('template_url'); ?>/images/DSC08027-homer-220x220px.jpg" alt="Homer Laughlin Harlequin Casserole Dish">
-                <div class="cover"><h3>Go To New Finds >></h3></div>
-                
-                </a>
-                
-                    <!-- needed to display content from the panel -->
-                    <?php /*?><?php if (have_posts()) : while (have_posts()) : the_post(); ?> <?php */?>
-    
-                    <?php /*?><div id="post-<?php the_ID(); ?>"><?php */?>
-    
-                    <!-- START BLOG POST -->
-                    <!--<div class="blog-post"> -->               
-        
-                      <!-- START BLOG-DESCRIPTION -->
-                      <!--<div class="blog-post-description">-->
-                      <?php /*?><?php the_content('<p class="serif">More &raquo;</p>'); ?><?php */?>
-                      <?php /*?><?php edit_post_link('Edit this entry.', '<p class="clear"><small>', '</small></p>'); ?><?php */?>
-                      <!-- </div>-->
-                      <!-- END BLOG-DESCRIPTION -->
-        
-                    <!--</div>--> 
-                    <!-- END BLOG POST -->
-  
-                    <!--</div>-->
-                    <!-- END DIV POST- --> 
-   
-                   <?php /*?> <?php endwhile; endif; ?> <?php */?> 
-    
+            
            </div> <!-- end cta2 -->
           
           </div> <!-- end cta-one-two -->
@@ -87,12 +69,15 @@
          
           <div id="cta-three" class="box-shadow">
           
-               <img src="<?php bloginfo('template_url'); ?>/images/placeholder-220x220.png" alt="Placeholder for Sale Items">
-                            <div class="cover"><h3>See Sale Items >></h3></div>
-             
-                    
-              <?php /*?><h3>See Sale Items >></h3>     
-                  <img src="<?php bloginfo('template_url'); ?>/images/DSC08036-plastic-cups-220x220px.jpg" alt="Vintage Plastic Cups"><?php */?>
+               <?php if ( is_active_sidebar( 'ctathree' ) ) : ?>
+
+				<?php dynamic_sidebar( 'ctathree' ); ?>
+
+				<?php else : ?>
+
+				<!-- Create some custom HTML or call the_widget().  It's up to you. -->
+
+				<?php endif; ?>
                   
           </div> <!-- end cta3 -->
           

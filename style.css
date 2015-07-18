@@ -2,7 +2,7 @@
 /*  
 Theme Name: Giddy Throng
 Description: Custom theme for giddythrong.com 
-Version: 140905
+Version: 150717
 Author: Troy Fleischauer
 Author URI: http://portfolio.troyfleischauer.com
 */
@@ -15,8 +15,8 @@ Color Palette: Koi Fish Orange
 #8C6549 : Clay 140, 101, 73
 #6E7235 : Green 110, 114, 53
 	Shades of Green:
-		dark yellow: #E8F070;
-		light yellow: #F4FD76;
+		#E8F070 : Dark Yellow: 232, 240, 112
+		#F4FD76 : Light Yellow 244, 253, 118
 
 https://kuler.adobe.com/Koi-Fish-Orange-art-colors/
 */
@@ -797,6 +797,31 @@ blockquote {
 	padding-left:1%;
 }
 
+.widget-title {
+	/*background-color: #FFF;*/	
+}
+
+/* POSTS IN SIDEBAR */
+#cta-four p.pis-title {
+	margin-bottom: .3em;
+	
+}
+
+#cta-four p.pis-excerpt {
+	
+		
+}
+
+.pis-more {
+	display: block;	
+	margin-top: .3em;
+}
+
+.pis-ul {
+	padding: 0;	
+}
+/* END POSTS IN SIDEBAR */
+
 
 /*** END WIDGET STYLES ***/
 
@@ -1008,19 +1033,19 @@ footer #design-credit {
 
 #cta-one-two { /* 460/940 */
 	width: 48.93617021%;
-	float:left;
-	margin-bottom:10px;
+	float: left;
+	margin-bottom: 10px;
 }
 
 #cta-three-four { /* 460/940 */
 	width: 48.93617021%;
-	float:right;
-	margin-bottom:10px;
+	float: right;
+	margin-bottom: 10px;
 }
 
 #cta-one-two .widget,
 #cta-three-four .widget {
-	margin-bottom:5px;	
+	margin-bottom: 5px;	
 }
 
 
@@ -1029,13 +1054,16 @@ footer #design-credit {
 #cta-three p,
 #cta-four p,
 #cta-four ul {
-	margin-bottom:0;	
+	margin-bottom: 0;	
 }
 
 #cta-one {
 	width:47.82608696%; /* 220/460 */	
 	float:left;
-	background-color: rgba(255,255,255,0.8);
+	/*background-color: rgba(255,255,255,0.8);*/
+	max-height: 220px;
+	overflow: hidden;
+	/*background-color: rgba(232, 240, 112, .8);*/ /* Dark Yellow */
 }
 
 #cta-one .textwidget {
@@ -1044,8 +1072,7 @@ footer #design-credit {
 
 #cta-one > p,
 #cta-one > h3,
-#cta-four > h3,
-#cta-four li {
+#cta-four > h3 {
 	padding-left:4%;
 	padding-right:4%;	
 }
@@ -1053,7 +1080,7 @@ footer #design-credit {
 #cta-two {
 	width:47.82608696%; /* 220/460 */	
 	float:right;
-	background-color: rgba(255,255,255,0.8);	
+	/*background-color: rgba(255,255,255,0.8);*/	
 }
 
 #cta-three {
@@ -1065,7 +1092,12 @@ footer #design-credit {
 #cta-four {
 	width:47.82608696%; /* 220/460 */	
 	float:right;
-	background-color: rgba(255,255,255,0.8);	
+	/*background-color: rgba(255,255,255,0.8);*/
+	max-height: 220px;	
+	/*background-color: rgba(110, 114, 53, 0.6);*/ /* Green #6E7235; */
+	/*background-color: rgba(140, 101, 73, 1);*/ /* Clay */
+	/*background-color: rgba(244, 253, 118, .6);*/ /* Light Yellow */
+	/*background-color: rgba(232, 240, 112, .8);*/ /* Dark Yellow */
 }
 
 #cta-one ul,
@@ -1369,7 +1401,7 @@ div.hentry {
 }	
 }
 
-@media only screen and (min-width: 821px) and (max-device-width: 905px) {
+@media only screen and (min-width: 811px) and (max-device-width: 905px) {
 h3 {
 	font-size:1em;
 }
@@ -1377,9 +1409,9 @@ h3 {
 p {
 	font-size:0.875em;	
 }		
-}
+/*}
 
-@media only screen and (min-width: 811px) and (max-device-width: 820px) {
+@media only screen and (min-width: 811px) and (max-device-width: 820px) {*/
 #utility {
 	width: 16%;
 }	
@@ -1465,8 +1497,9 @@ h3 {
 	font-size:0.85em;
 }
 
-p {
-	font-size:0.75em;	
+p,
+.text-widget {
+	font-size: 0.75em;	
 }
 
 ol,
@@ -1486,6 +1519,10 @@ blockquote {
 
 .blog-post {
 	margin-bottom: 1.5em;
+}
+
+#cta-one .textwidget {
+	font-size: 0.65em;
 }
 }
 
