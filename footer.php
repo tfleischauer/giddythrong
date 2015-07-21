@@ -19,9 +19,9 @@
 
 <footer class="page-wrapper">
 	<div class="middle-content-wrapper box-shadow">
-		<p id="copyright"><?php print ("&copy; " . date ('Y') . " "); ?>Giddy Throng. All Rights Reserved. </p> 
-        <p id="design-credit">Web Design <a href="http://www.portfolio.troyfleischauer.com" target="_blank">Troy Fleischauer</a></p>
-        &bull; <?php wp_loginout(); ?>.
+		<span id="copyright"><?php print ("&copy; " . date ('Y') . " "); ?>Giddy Throng. All Rights Reserved. </span> 
+        <span id="design-credit">Web Design <a href="http://www.portfolio.troyfleischauer.com" target="_blank">Troy Fleischauer</a></span>
+        <span class="log-in"><?php wp_loginout(); ?></span>
     </div>
 </footer>
         

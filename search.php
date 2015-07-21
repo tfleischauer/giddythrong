@@ -21,9 +21,12 @@
 		</ul>
 	<?php else : ?>
 
-		<h2>No posts found about your topic.</h2>
-        <h3>Try a different search?</h3>
-    	<p><?php get_search_form(); ?></p> 
+		<h3 class="padding-bottom">No posts found about your topic.</h3>
+        <p>Try a different search?</p>
+    
+        <div id="search404">
+            <?php get_search_form(); ?>
+        </div> 
 
 	<?php endif; ?>
 		

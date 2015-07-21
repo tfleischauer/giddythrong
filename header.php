@@ -5,16 +5,16 @@
 
 	<title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?> | <?php bloginfo('description'); ?></title>
     
-<!-- Remy Sharp Shim --> 
-<!--[if lt IE 9]> 
-<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
-<![endif]-->  
+    <!-- Remy Sharp Shim --> 
+    <!--[if lt IE 9]> 
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script> 
+    <![endif]-->  
 
-<!-- sans-serif typefaces -->
- <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> <!-- similar to Futura -->
+    <!-- sans-serif typefaces -->
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'> <!-- similar to Futura -->
  
-<!-- serif typefaces -->
- <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>  
+    <!-- serif typefaces -->
+    <link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>  
 
     <link rel="stylesheet" type="text/css" media="all" href="<?php bloginfo('stylesheet_url'); ?>" />
     
@@ -36,7 +36,8 @@
         
         
 		<script src="<?php bloginfo('template_url'); ?>/js/scripts.js"></script>
-
+        
+        <meta name="viewport" content="initial-scale=1">
 
 	  <?php /*?> Always have wp_head() just before the closing </head>
 	   tag of your theme. Many plugins use this hook to add 
