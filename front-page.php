@@ -44,7 +44,15 @@
         
           <div id="cta-one" class="box-shadow">
                         
-              <?php get_sidebar( 'secondary' ); ?>
+              <?php if ( is_active_sidebar( 'ctaone' ) ) : ?>
+
+				<?php dynamic_sidebar( 'ctaone' ); ?>
+
+				<?php else : ?>
+
+				<!-- Create some custom HTML or call the_widget().  It's up to you. -->
+
+				<?php endif; ?>
               
           </div> <!-- end cta-one -->
             

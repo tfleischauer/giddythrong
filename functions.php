@@ -49,8 +49,6 @@ function my_register_sidebars() {
 		)
 	);
 	
-	
-	
 	/* Register the breadcrumbs widget area. */
 	register_sidebar(
 		array(
@@ -87,11 +85,11 @@ function my_register_sidebars() {
 		)
 	);
 	
-	/* Register the secondary widget area. */
+	/* Register the CTA One Widget Sidebar. */
 	register_sidebar(
 		array(
-			'id' => 'secondary',
-			'name' => __( 'Secondary Widget Sidebar' ),
+			'id' => 'ctaone',
+			'name' => __( 'CTA One Widget Sidebar' ),
 			'before_widget' => '<div id="%1$s" class="widget %2$s">',
 			'after_widget' => '</div>',
 			'before_title' => '<h3 class="widget-title">',
@@ -99,7 +97,7 @@ function my_register_sidebars() {
 		)
 	);
 	
-	/* Register the CTA Two sidebar. */
+	/* Register the CTA Two Sidebar. */
 	register_sidebar(
 		array(
 			'id' => 'ctatwo',
@@ -111,7 +109,7 @@ function my_register_sidebars() {
 		)
 	);
 	
-	/* Register the CTA Three sidebar. */
+	/* Register the CTA Three Sidebar. */
 	register_sidebar(
 		array(
 			'id' => 'ctathree',
@@ -123,7 +121,7 @@ function my_register_sidebars() {
 		)
 	);
 	
-	/* Register the CTA Four sidebar. */
+	/* Register the CTA Four Sidebar. */
 	register_sidebar(
 		array(
 			'id' => 'ctafour',
