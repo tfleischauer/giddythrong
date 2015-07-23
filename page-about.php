@@ -18,7 +18,7 @@
 	<?php while (have_posts()) : the_post(); ?> 
     
     <!-- START BLOG POST -->
-	<div class="blog-post">        
+	<div>        
         
         
         <!-- START BLOG-DESCRIPTION -->
